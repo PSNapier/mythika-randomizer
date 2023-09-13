@@ -1,0 +1,46 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>document.title = `Mythika Randomizer`;</script>
+</head>
+
+<section id="randomizer">
+	<div id="wrapper" class="content">
+		<div id="input" style="text-align: center;">
+			<div id="wrapperOptions">
+				<div id="pillContainer">
+					<span class="container-header">Items</span>
+				</div>
+
+				<div id="options-spacer"></div>
+
+				<div id="selectContainer">
+					<span class="container-header">Build</span>
+
+					<!-- <span class="break"></span> -->
+
+					<select id="selectSpecies"><option value="">Species</option></select>
+					<select id="selectGender"><option value="">Gender</option></select>
+					<select id="selectRank"><option value="">Rank</option></select>
+					<select id="selectBuild"><option value="">Build</option></select>
+					<select id="selectEars"><option value="">Ear Trait</option></select>
+					<select id="selectTail"><option value="">Tail Trait</option></select>
+					<select id="selectBonusTrait"><option value="">Bonus Trait</option></select>
+					<select id="selectMutation"><option value="">Mutation</option></select>
+					<select id="selectCoatColour"><option value="">Coat Colour</option></select>
+					<select id="selectMarkings" multiple="multiple" size="5"><option value="">Markings</option></select>		
+					<select id="selectHereditaryTraits" multiple="multiple" size="5"><option value="">Hereditary Traits</option></select>
+					</div>
+			</div>
+		</div>
+
+		<div id="output-wrapper">
+			<div id="output-button-wrapper">
+				<button id="buttonRoll" onclick="buttonPress()">Roll Pup</button>
+				<button id="buttonClear" onclick="reload()">Clear Form</button>
+			</div>
+			<div id="output"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</section>
